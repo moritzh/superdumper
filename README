@@ -1,0 +1,29 @@
+Superdumper
+===========
+
+This plugin consists of nothing but one rake-task,
+
+rake db:superdumper
+
+which outputs the file database.pdf in RAILS_ROOT. This pdf-file contains
+your database scheme visualized, using graphviz. If you want to customise it, 
+just modify it, the source isn't too hard to understand i guess.
+
+Installing GraphVIZ
+===================
+Graphviz  http://www.graphviz.org/, is a graph visualization tool made by 
+AT&T and Bell, and should be available for your platform using your package
+manager. 
+
+OS X:
+=====
+Using MacPorts, just do a 
+# sudo port install graphviz
+which should install everything necessary
+
+Debian:
+=======
+# aptitude install graphviz
+
+
+Copyright (c) 2009 Moritz Haarmann, released under the MIT license
